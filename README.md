@@ -27,3 +27,22 @@ Current pipeline:
 The OCR implementation is located in:
 
 `backend/ocr_engine.py`
+
+## Structured Data Extraction
+
+The OCR output is converted into structured land-record fields using a rule-based extraction engine.
+
+Currently supported fields:
+
+- Owner name
+- Father's name
+- Village
+- District
+- Survey number
+- Area
+- Area unit
+- Land type
+
+Implementation:
+
+`backend/extraction.py`
