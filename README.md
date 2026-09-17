@@ -69,3 +69,22 @@ Validation results distinguish between:
 Implementation:
 
 `backend/validation.py`
+
+## Confidence Scoring
+
+The system calculates an explainable confidence score using multiple signals:
+
+- OCR confidence
+- Required-field completeness
+- Validation score
+- Optional-field completeness
+
+The overall score is mapped to:
+
+- HIGH: 90–100
+- MEDIUM: 70–89
+- LOW: below 70
+
+The confidence calculation is implemented in:
+
+`backend/confidence.py`
