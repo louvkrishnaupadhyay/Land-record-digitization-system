@@ -21,3 +21,7 @@ Thumbs.db
 # Uploaded land records
 backend/uploads/*
 !backend/uploads/.gitkeep
+
+# Test documents
+backend/test_data/*
+!backend/test_data/.gitkeep
