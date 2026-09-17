@@ -46,3 +46,26 @@ Currently supported fields:
 Implementation:
 
 `backend/extraction.py`
+
+## Land Record Validation
+
+The system validates structured land-record data after OCR extraction.
+
+Current validation checks include:
+
+- Required field validation
+- Owner name validation
+- Survey number format validation
+- Land area validation
+- Area unit validation
+- Land type validation
+
+Validation results distinguish between:
+
+- Errors
+- Warnings
+- Successfully validated fields
+
+Implementation:
+
+`backend/validation.py`
