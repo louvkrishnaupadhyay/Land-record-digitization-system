@@ -17,3 +17,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Uploaded land records
+backend/uploads/*
+!backend/uploads/.gitkeep
