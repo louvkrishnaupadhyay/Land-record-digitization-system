@@ -13,3 +13,17 @@ The backend currently supports uploading land-record documents in the following 
 - PNG
 
 Uploaded files are stored locally during development and are excluded from version control.
+
+## OCR Processing
+
+The system uses Tesseract OCR to extract text from preprocessed land-record images.
+
+Current pipeline:
+
+1. Document upload
+2. Image preprocessing
+3. OCR text extraction
+
+The OCR implementation is located in:
+
+`backend/ocr_engine.py`
